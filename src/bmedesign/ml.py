@@ -29,7 +29,11 @@ def _normalize_column(name: str) -> str:
 
 def load_ansur_csv(path: str | Path) -> pd.DataFrame:
     """Load one original ANSUR II public CSV and normalize column names."""
-    df = pd.read_csv(path, encoding="cp1252")
+    try:
+        df = pd.read_csv(path, encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        # Some mirrors preserve the original Windows-1252 text encoding.
+        df = pd.read_csv(path, encoding="cp1252")
     df.columns = [_normalize_column(c) for c in df.columns]
     return df
 
