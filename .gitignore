@@ -6,3 +6,4 @@ env/
 output/*.stl
 output/*.png
 .ipynb_checkpoints/
+data/*.csv
