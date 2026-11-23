@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+env/
+output/*.stl
+output/*.png
+.ipynb_checkpoints/
