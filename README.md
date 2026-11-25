@@ -2,7 +2,7 @@
 
 ## استفاده از پروژه
 
-1. وابستگی‌ها را نصب کنید:
+1. پکیج‌ها را نصب کنید:
 
    ```bash
    pip install -r requirements.txt
@@ -12,7 +12,7 @@
    - `ANSUR II FEMALE Public.csv`
    - `ANSUR II MALE Public.csv`
 
-   اگر فایل‌ها را ندارید، از ریشه پروژه اجرا کنید:
+   اگر فایل‌ها را ندارید، اسکریپت زیر را اجرا کنید:
 
    ```bash
    python scripts/download_ansur.py
@@ -36,13 +36,10 @@
 
 ## دیتاست
 
-پروژه از دیتاست عمومی **ANSUR II** (اندازه‌گیری‌های آنتروپومتریک پرسنل ارتش آمریکا) استفاده می‌کند:
-
 - صفحه رسمی معرفی دیتاست و متغیرها: https://ph.health.mil/topics/workplacehealth/ergo/Pages/Anthropometric-Database.aspx
 - دریافت دیتاست از Penn State OPEN Design Lab: https://www.openlab.psu.edu/ansur2/
 - نسخه CSV مورد استفاده اسکریپت دانلود: https://github.com/senihberkay/US-Army-ANSUR-II
 
-فایل‌های CSV باید در پوشه `data/` باشند. مدل از هر فایل معتبر و غیرخالی استفاده می‌کند؛ اگر یکی از فایل‌ها خالی یا نامعتبر باشد، آن فایل کنار گذاشته می‌شود.
 
 ## الگوریتم ماشین لرنینگ
 
